@@ -13,6 +13,10 @@ def index():
 def pagina_html():
     return render_template('sobre.html')
 
+@app.route('/curso')
+def curso_html():
+    return render_template('curso.html')
+
 # Rota com variável na URL
 @app.route('/usuario/<nome>')
 def usuario(nome):
